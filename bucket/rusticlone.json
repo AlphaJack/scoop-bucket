@@ -3,6 +3,7 @@
     "description": "Scheduled 3-2-1-1-0 backups for computers and servers built on rustic profiles, with UI and notifications",
     "homepage": "https://github.com/AlphaJack/rusticlone",
     "license": "AGPL-3.0-or-later",
+    "depends": "main/rustic",
     "architecture": {
         "64bit": {
             "url": "https://github.com/AlphaJack/rusticlone/releases/download/v2.0.1/rusticlone-x86_64-pc-windows-msvc.zip",
