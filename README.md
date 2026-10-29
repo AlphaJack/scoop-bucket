@@ -1,12 +1,16 @@
 # Scoop bucket
 
-[![Tests](https://github.com/AlphaJack/scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/AlphaJack/scoop-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/AlphaJack/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/AlphaJack/scoop-bucket/actions/workflows/excavator.yml)
-
-[Scoop](https://scoop.sh) bucket for [rusticlone](https://github.com/AlphaJack/rusticlone).
+[Scoop](https://scoop.sh) bucket for my packages.
 
 ```pwsh
+# install scoop
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+# add the bucket
 scoop bucket add alphajack https://github.com/AlphaJack/scoop-bucket
+
+# install packages
+scoop install alphajack/mercurio
 scoop install alphajack/rusticlone
 ```
-
-Excavator checks for new releases every 4 hours and updates the manifest.
